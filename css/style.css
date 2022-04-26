@@ -412,7 +412,7 @@ li{
     }
     .operation-container .operation-list{
         border-radius: 8px 8px 0 0;
-        width: 80%;
+        width: 100%;
         border-bottom: 2px solid #1DB559;
         border-right: unset;
         margin: auto;
