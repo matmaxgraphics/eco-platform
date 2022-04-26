@@ -784,22 +784,11 @@ li{
   
 @media only screen and (max-width: 800px) {
     .contact-fields {
-        margin-top: 60px;
-    }
-  
-    .contact-wrapper {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        width: 90%;
-        padding: 48px 0 48px 24px;
-    }
-    .contact-fields {
         width: 100%;
     }
-    .contact-fields {
-        margin-top: 48px;
+
+    .contact-fields form {
+        width: 90%;
     }
 }
 
