@@ -696,7 +696,8 @@ li{
     flex-direction: column;
     padding: 24px;
     margin-bottom: 48px;
-    /* background: url('../images/community-bg.png') center no-repeat; */
+    background: url('../images/eco-bg-1.png') center no-repeat;
+    background-size: cover;
 }
 
 .community-section img.logo-icon{
@@ -754,6 +755,9 @@ li{
     margin: auto;
     border-radius: 8px;
 }
+.contact-wrapper .orange{
+    background-color: rgba(247, 145, 30, 1);
+}
 .contact-fields form {
     width: 80%;
     padding: 24px;
@@ -801,6 +805,49 @@ li{
 }
 /*=======END OF CONTACT SECTION STYLING=======*/
 
+
+[data-tab-content] {
+    display: none;
+}
+  
+.active[data-tab-content] {
+    display: block;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    max-width: 600px;
+    margin: auto;
+    /* border-bottom: 1px solid black; */
+}
+  
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+}
+  
+.tab.active {
+    background-color: rgba(46, 156, 219, 1);
+    border-radius: 8px 8px 0 0;
+    padding: 12px;
+    color: #fff;
+    max-width: 500px;
+}
+  
+.tab:hover {
+    background-color: rgba(38, 50, 56, 1);
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 8px 8px 0 0;
+}
+  
+.tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 /*========EVENT SECTION STYLING=======*/
 .event-section{
@@ -916,8 +963,10 @@ li{
 }
 .picture-speaks__section .item img{
     display: block;
-    width: 100%;
+    /* max-width: 400px; */
     height: auto;
+    object-fit: cover;
+    object-position: center;
     border-radius: 8px;
 }
 /*========END OF PICTURE SPEAKER SECTION STYLING========*/

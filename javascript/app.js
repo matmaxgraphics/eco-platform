@@ -26,3 +26,5 @@ option2.addEventListener("click" ,function(){
 
 })
 
+
+//SCRIPT FOR HTML TAB USING W3 SCHOOLS CODE

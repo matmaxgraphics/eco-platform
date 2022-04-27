@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/main.css"> -->
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!--OWL CAROUSEL CSS CDN-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
@@ -31,7 +32,7 @@
                     <a href="#" class="nav-link">Gallary</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>     
         <!--Nav Button-->
@@ -233,31 +234,68 @@
         </section>
 
 
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <h2>Know When We Launch, Register Now</h2>
-            <div class="contact-wrapper">
-                <div class="contact-fields">
-                    <form action="contact.html" method="post">
-                        <div>
-                            <label for="name">Your Full name</label>
-                            <input type="text" name="name" id="name" class="input-field" placeholder="e.g John Doe" required>
+            <ul class="tabs">
+                <li data-tab-target="#individual" class="active tab">Individual</li>
+                <li data-tab-target="#organisation" class="tab">Organisation</li>
+            </ul>
+              
+            <div class="tab-content">
+                <div id="individual" data-tab-content class="active">
+                    <div class="contact-wrapper">
+                        <div class="contact-fields">
+                            <form action="contact.html" method="post">
+                                <div>
+                                    <label for="name">Your Full name</label>
+                                    <input type="text" name="name" id="name" class="input-field" placeholder="e.g John Doe" required>
+                                </div>
+    
+                                <div>
+                                    <label for="sector">Sector / Industry</label>
+                                    <input type="text" name="sector" id="sector" class="input-field" placeholder="Agriculture" required>
+                                </div>
+    
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" class="input-field" placeholder="sample@email.com" required>
+                                </div>
+    
+                                <button class="btn" type="submit" name="submit-btn">Submit</button>
+                            </form>
                         </div>
-
-                        <div>
-                            <label for="sector">Sector / Industry</label>
-                            <input type="text" name="sector" id="sector" class="input-field" placeholder="Agriculture" required>
-                        </div>
-
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" class="input-field" placeholder="sample@email.com" required>
-                        </div>
-
-                        <button class="btn" type="submit" name="submit-btn">Submit</button>
-                    </form>
+                    </div>
                 </div>
+    
+                <div id="organisation" data-tab-content>
+                    <div class="contact-wrapper">
+                        <div class="contact-fields orange">
+                            <form action="contact.html" method="post">
+                                <div>
+                                    <label for="name">Organisation name</label>
+                                    <input type="text" name="name" id="name" class="input-field" placeholder="e.g John Doe" required>
+                                </div>
+    
+                                <div>
+                                    <label for="sector">Sector / Industry</label>
+                                    <input type="text" name="sector" id="sector" class="input-field" placeholder="Agriculture" required>
+                                </div>
+    
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" class="input-field" placeholder="sample@email.com" required>
+                                </div>
+    
+                                <button class="btn" type="submit" name="submit-btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            
             </div>
         </section>
+
+        
 
         <section class="event-section">
             <h2>News & Upcoming Events</h2>
@@ -421,7 +459,7 @@
         $(document).ready(function() {
             $("#owl-demo").owlCarousel({
                 autoPlay: 3000, //Set AutoPlay to 3 seconds
-                items : 4,
+                items : 3,
                 itemsDesktop : [1199,3],
                 itemsDesktopSmall : [979,3]
             });
